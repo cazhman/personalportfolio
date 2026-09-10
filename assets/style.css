@@ -4,15 +4,15 @@
    dark-mode default.
 */
 :root {
-  --ink-navy: #0e1a2b;
-  --navy-alt: #142338;
-  --paper: #f5f1e8;
+  --ink-navy: #0b3d24;
+  --navy-alt: #0f4d2d
+  --paper: #fbfaf7;
   --gold: #c7973e;
   --gold-soft: #e4c887;
-  --text-light: #e8e6de;
+  --text-light: #f2f5f2;
   --text-dark: #1b1f27;
-  --muted: #9aa5b1;
-  --muted-dark: #6b7280;
+  --muted: #cfe3d5;
+  --muted-dark: #5b6b60;
 }
 
 html {
