@@ -1,4 +1,4 @@
-# Ezekiel "Mad" Evangelista — Portfolio
+# Ezekiel Evangelista — Portfolio
 
 **Live site:** _add your `username.github.io/repo-name` link here once Pages is enabled_
 
