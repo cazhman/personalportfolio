@@ -1,0 +1,278 @@
+/* ===== Design tokens =====
+   Navy + gold, in the vein of CSB branding — a palette that's actually
+   grounded in the subject's own school colors rather than a generic
+   dark-mode default.
+*/
+:root {
+  --ink-navy: #0e1a2b;
+  --navy-alt: #142338;
+  --paper: #f5f1e8;
+  --gold: #c7973e;
+  --gold-soft: #e4c887;
+  --text-light: #e8e6de;
+  --text-dark: #1b1f27;
+  --muted: #9aa5b1;
+  --muted-dark: #6b7280;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--paper);
+}
+
+h1, h2, h3, .display-name {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-lede {
+  color: var(--muted-dark);
+  max-width: 46rem;
+  margin-bottom: 2rem;
+}
+
+/* ===== Navbar ===== */
+#mainNav {
+  background-color: rgba(14, 26, 43, 0.92);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  color: var(--gold-soft) !important;
+  font-size: 1.15rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-light);
+  margin-left: 0.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--gold-soft);
+}
+
+/* ===== Hero ===== */
+.hero-section {
+  background-color: var(--ink-navy);
+  color: var(--text-light);
+  padding: 9rem 0 5rem;
+}
+
+.eyebrow {
+  color: var(--gold-soft);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.display-name {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+}
+
+.hero-lede {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 34rem;
+  margin-bottom: 2rem;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--ink-navy);
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-soft);
+  border-color: var(--gold-soft);
+  color: var(--ink-navy);
+}
+
+.btn-outline-gold {
+  border-color: var(--gold);
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: var(--ink-navy);
+}
+
+/* ===== About ===== */
+.about-section {
+  padding: 5rem 0;
+  background-color: var(--paper);
+}
+
+.about-section p {
+  line-height: 1.75;
+  max-width: 42rem;
+}
+
+/* ===== Skills ===== */
+.skills-section {
+  padding: 5rem 0;
+  background-color: var(--navy-alt);
+  color: var(--text-light);
+}
+
+.skills-section h2 {
+  color: var(--text-light);
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.skill-track:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.skill-track-label {
+  font-family: 'Fraunces', serif;
+  color: var(--gold-soft);
+  min-width: 11rem;
+  font-size: 1.05rem;
+}
+
+.skill-badge {
+  background-color: rgba(245, 241, 232, 0.08);
+  color: var(--text-light);
+  border: 1px solid rgba(245, 241, 232, 0.25);
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.5em 0.85em;
+}
+
+/* ===== Projects ===== */
+.projects-section {
+  padding: 5rem 0;
+  background-color: var(--paper);
+}
+
+.project-card {
+  border: 1px solid rgba(14, 26, 43, 0.12);
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.project-card .card-title {
+  font-family: 'Fraunces', serif;
+  color: var(--ink-navy);
+}
+
+.project-card .card-text {
+  color: var(--muted-dark);
+  font-size: 0.95rem;
+}
+
+.project-card .card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding-top: 0;
+}
+
+.project-note {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--muted-dark);
+  font-style: italic;
+}
+
+/* ===== Contact ===== */
+.contact-section {
+  padding: 5rem 0;
+  background-color: var(--ink-navy);
+  color: var(--text-light);
+}
+
+.contact-section h2 {
+  color: var(--text-light);
+}
+
+.contact-form label {
+  color: var(--text-light);
+}
+
+.contact-form .form-control {
+  background-color: rgba(245, 241, 232, 0.06);
+  border-color: rgba(245, 241, 232, 0.25);
+  color: var(--text-light);
+}
+
+.contact-form .form-control:focus {
+  background-color: rgba(245, 241, 232, 0.1);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.2rem rgba(199, 151, 62, 0.25);
+  color: var(--text-light);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: var(--navy-alt);
+  color: var(--muted);
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-icons a {
+  color: var(--text-light);
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: var(--gold-soft);
+}
+
+/* Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+.nav-link:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
