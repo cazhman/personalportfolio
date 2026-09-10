@@ -1,8 +1,4 @@
-/* ===== Design tokens =====
-   Navy + gold, in the vein of CSB branding — a palette that's actually
-   grounded in the subject's own school colors rather than a generic
-   dark-mode default.
-*/
+
 :root {
   --ink-navy: #0b3d24;
   --navy-alt: #0f4d2d
