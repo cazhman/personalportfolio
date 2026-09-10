@@ -46,7 +46,7 @@ h2 {
 .navbar-brand {
   font-family: 'Fraunces', serif;
   font-weight: 600;
-  color: var(--gold-soft) !important;
+  color: #000000 !important;
   font-size: 1.15rem;
 }
 
